@@ -7,4 +7,3 @@
  It's Carbonara because this script resembles  
   Spaghetti Carbonara, a junk food made from   
     over-burned bacon and powdered eggs...     
-
