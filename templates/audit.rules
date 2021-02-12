@@ -1,0 +1,9 @@
+-D
+-b 1024
+-a exit,always -S unlink -S rmdir
+-a exit,always -S open -F loginuid=1001
+-w /etc/group -p wa
+-w /etc/passwd -p wa
+-w /etc/shadow -p wa
+-w /etc/sudoers -p wa
+-e 2
