@@ -1,4 +1,3 @@
-=================================================
 ------------------ CARBONARA --------------------
 ---- butchered jshielder for superlazy roots ----
 -------------------------------------------------
@@ -8,5 +7,4 @@
 - It's Carbonara because this script resembles  -
 -  Spaghetti Carbonara, a junk food made from   -
 -    over-burned bacon and powdered eggs...     -
-=================================================
 
