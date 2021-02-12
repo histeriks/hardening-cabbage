@@ -298,8 +298,8 @@ chmod 600 /etc/group-
 chown root:root /etc/gshadow-
 chmod 600 /etc/gshadow-
 
-read ip < <(last -i | grep -o '[0-9]\+[.][0-9]\+[.][0-9]\+[.][0-9]\+')
-echo $ip >> /etc/hosts.allow
+read ip < <(last -i | grep -o '[0-9]\+[.][0-9]\+[.][0-9]\+[.][0-9]\+') && echo ALL: $ip >> /etc/hosts.allow
+
 service sshd restart
 
 clear
