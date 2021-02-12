@@ -35,3 +35,4 @@ UsePAM yes
 UseDNS no
 MaxStartups 2
 Banner /etc/motd
+AllowUsers root USERNAME
