@@ -35,6 +35,6 @@ User you create in the hardening process is automatically added to Sudo group an
 
 Also, SSH communication port will change from 22 to 372, so you will have to adjust that as well (use "ssh -p 372 username@server-address", or make permanent changes in your .ssh/config file).
 
-If you find the script handy, visit my blog and share the fuck out of me furher. I'm an attention whore craving for ego boosts...
+If you find the script handy, visit my blog and share the fuck out of me furher. I'm an attention whore, a bottomless pit for ego boosts of all kinds:
 
 http://www.penetration.zone
