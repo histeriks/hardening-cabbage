@@ -98,7 +98,7 @@ f_banner
 echo -e ""
 echo -e "Installing and configuring AIDE"
 
-apt-get install aide
+apt-get install aide -y
 aideinit
 
 clear
@@ -126,17 +126,13 @@ cat templates/motd-CIS > /etc/issue.net
 chown root:root /etc/motd /etc/issue /etc/issue.net
 chmod 644 /etc/motd /etc/issue /etc/issue.net
 
-
 apt-get update
 apt-get -y upgrade
 
-
-apt-get remove telnet
-
+apt-get remove telnet -y
 
 sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="ipv6.disable=1"/g' /etc/default/grub
 update-grub
-
 
 clear
 f_banner
@@ -150,17 +146,13 @@ echo "ALL: 10.0.0.0/255.0.0.0" >> /etc/hosts.allow
 echo "ALL: 192.168.0.0/255.255.0.0" >> /etc/hosts.allow
 echo "ALL: 172.16.0.0/255.240.0.0" >> /etc/hosts.allow
 
-
 echo "ALL: ALL" >> /etc/hosts.deny
-
 
 chown root:root /etc/hosts.allow
 chmod 644 /etc/hosts.allow
 
-
 chown root:root /etc/hosts.deny
 chmod 644 /etc/hosts.deny
-
 
 clear
 f_banner
@@ -178,7 +170,6 @@ echo "install rds /bin/true" >> /etc/modprobe.d/CIS.conf
 
 echo "install tipc /bin/true" >> /etc/modprobe.d/CIS.conf
 
-
 clear
 f_banner
 
@@ -192,7 +183,6 @@ cp templates/iptables-CIS.sh /etc/init.d/
 chmod +x /etc/init.d/iptables-CIS.sh
 ln -s /etc/init.d/iptables-CIS.sh /etc/rc2.d/S99iptables-CIS.sh
 
-
 clear
 f_banner
 echo -e ""
@@ -201,7 +191,7 @@ echo -e "Installing and configuring Auditd"
 spinner
 sleep 1
 
-apt-get install auditd
+apt-get install auditd -y
 
 cp templates/auditd-CIS.conf /etc/audit/auditd.conf
 
@@ -231,7 +221,6 @@ touch /etc/at.allow
 
 chmod og-rwx /etc/cron.allow /etc/at.allow
 chown root:root /etc/cron.allow /etc/at.allow
-
 
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo -e "\e[93m[+]\e[00m We will now Create a New User for SSH Access"
@@ -266,7 +255,6 @@ cp templates/common-passwd-CIS /etc/pam.d/common-passwd
 cp templates/pwquality-CIS.conf /etc/security/pwquality.conf
 cp templates/common-auth-CIS /etc/pam.d/common-auth
 
-
 cp templates/login.defs-CIS /etc/login.defs
 
 useradd -D -f 30
@@ -283,7 +271,6 @@ done
 usermod -g 0 root
 
 sed -i s/umask\ 022/umask\ 027/g /etc/init.d/rc
-
 
 clear
 f_banner
