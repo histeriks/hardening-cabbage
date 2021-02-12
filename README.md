@@ -24,6 +24,7 @@ chmod +x carbonara-ubuntu-CIS.sh
 and
 
 ./carbonara-ubuntu-CIS.sh
+
 ^^^ to finally run the script!
 
 After that, just follow the instructions (you might have to press enter a few times, though i did my best to make it almost fully autonomous).
