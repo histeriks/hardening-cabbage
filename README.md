@@ -1,6 +1,6 @@
------------------- CARBONARA --------------------
----- butchered jshielder for superlazy roots ----
--------------------------------------------------
+-                 CARBONARA                     -
+-    butchered jshielder for superlazy roots    -
+-                                               -
 -  Carbonara not because diamonds are hardest   -
 -   thing known to man. Carbonara not because   -
 - diamonds are pure, most dense form of carbon  -
