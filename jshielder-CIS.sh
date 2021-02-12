@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# Carbonara, a CIS HARDening script for Ubuntu 18.04
-#
-# Carbonara not because diamonds are harrrrrdest thing known to man...
-# Carbonara not because diamonds are the purest, densest carbon...
-#
-# Carbonara because this script resembles spaghetti, spaghetti carbonara, junk food made from over-burned bacon and powdered eggs...
-#
-# basically it's a butchered JShielder (from Jason Soto) tweaked for my own needs...
-# 
+# Carbonara v1.0
+# CIS Hardening script for Ubuntu 18.04
+# heavily butchered JShielder script with my corrections, simplifications and complications. 
+# Feel free to thank Jason Soto who made the original script. I was just too lazy to use it interractively,
+# so i created my own version which ain't such a terrible pain in the arse...i think.
 
 source helpers.sh
 
