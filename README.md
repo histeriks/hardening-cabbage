@@ -1,11 +1,11 @@
 # CARBONARA                     
-# butchered from jshielder by yours trully, to help the lazy-ass root bretheren throughout the world!
-# script's purpose is hardening of Ubuntu 18.04, achieving CIS regulatory compliance, without having to move a finger!
+# savagely butchered from jshielder by yours trully, torn to shreads and rebuilt to aid my lazy-ass root bretheren from all over!
+# script's purpose is hardening of Ubuntu 18.04, achieving CIS regulatory compliance without having to move a finger!
                                                
 Carbonara not because diamonds are the hardest, purest, densest form of carbon, the hardest crap in whole damn universe...
 Carbonara because it resembles spaghetti, Spaghetti Carbonara, trashy food made from carbonized bacon, spaghetti and eggs...
 
-Also, it's done in 5 mins, same as just mentioned specialty...
+Also, it's done in 5, same as mentioned specialty...
 
 To use, log in into your VPS as root, and type:
 
