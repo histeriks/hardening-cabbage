@@ -231,12 +231,11 @@ adduser $username
 echo -n " Securing SSH..."
 sed s/USERNAME/$username/g templates/sshd_config-CIS > /etc/ssh/sshd_config; echo "OK"
 
-mkdir /home/$username/.ssh/
-cp -R /root/.ssh/ /home/$username/.ssh/
-chown -R $username:$username /home/$username/.ssh/
-chmod -R 700 /home/$username/.ssh/
-chmod 600 /home/$username/.ssh/*
-chmod 644 /home/$username/.ssh/*.pub
+runuser -u $username -- ssh-keygen -t rsa -f /home/$username/.ssh/id_rsa -q -P ""
+runuser -u $username -- touch /home/$username/.ssh/authorized_keys
+chmod 600 /home/$username/.ssh/authorized_keys
+cat /root/.ssh/authorized_keys > /home/$username/.ssh/authorized_keys
+
 service ssh restart
 
 chown root:root /etc/ssh/sshd_config
