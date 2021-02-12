@@ -1,11 +1,11 @@
 # CARBONARA                     
-# butchered from jshielder by yours trully, to support lazy-ass root bretheren throughout the world!
-# intended for hardening of Ubuntu 18.04, following CIS standards, without having to move a pinky...
+# butchered from jshielder by yours trully, to help the lazy-ass root bretheren throughout the world!
+# script's purpose is hardening of Ubuntu 18.04, achieving CIS regulatory compliance, without having to move a finger!
                                                
-Carbonara not because diamonds are the hardest, purest, densest form of carbon, the hardest crap in whole damn nature...
+Carbonara not because diamonds are the hardest, purest, densest form of carbon, the hardest crap in whole damn universe...
 Carbonara because it resembles spaghetti, Spaghetti Carbonara, trashy food made from carbonized bacon, spaghetti and eggs...
 
-Also, it's done in 5 mins, same as mentioned "specialty"...
+Also, it's done in 5 mins, same as just mentioned specialty...
 
 To use, log in into your VPS as root, and type:
 
@@ -35,5 +35,6 @@ User you create in the hardening process is automatically added to Sudo group an
 
 Also, SSH communication port will change from 22 to 372, so you will have to adjust that as well (use "ssh -p 372 username@server-address", or make permanent changes in your .ssh/config file).
 
+If you find the script handy, visit my blog and share the fuck out of me furher. I'm an attention whore craving for ego boosts...
 
-
+http://www.penetration.zone
