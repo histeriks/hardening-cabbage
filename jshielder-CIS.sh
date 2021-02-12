@@ -2,9 +2,8 @@
 
 # Carbonara v1.0
 # CIS Hardening script for Ubuntu 18.04
-# heavily butchered JShielder script with my corrections, simplifications and complications. 
-# Feel free to thank Jason Soto who made the original script. I was just too lazy to use it interractively,
-# so i created my own version which ain't such a terrible pain in the arse...i think.
+# Feel free to thank Jason who made the original. I was just too lazy to use it interractively,
+# so i created my version which ain't such a terrible pain in the arse...i think.
 
 source helpers.sh
 
@@ -13,17 +12,19 @@ source helpers.sh
 f_banner(){
 echo
 echo "
-==================================================
-=----------------- CARBONARA --------------------=
-=--- butchered jshielder, for superlazy roots ---=
-=------------------------------------------------=
-=  Carbonara, not because diamonds, the hardest  =
-=   thing known to man are made of pure carbon   =
-=------------------------------------------------=
-=    Carbonara because it resembles Spaghetti,   =
-=    Spaghetti Carbonara, junk food made from    =
-=     over-burned bacon and powdered eggs...     =
-==================================================
+=====================================================
+==================== CARBONARA ======================
+=     originally jshielder, butchered cruely by     =
+=    yours trully to aid other lazyass bretheren!   =
+=   use it for hardening of Ubuntu 18.04 according  =
+=   to CIS benchmarks, without moving your pinky!   =
+=====================================================
+=  Carbonara, not because diamonds are the hardest, = 
+=  purest, densest form of carbon, hardest crap in  =
+=    whole nature! Carbonara because it resembles   =
+=   Spaghetti, Spaghetti Carbonara, junk food made  =
+=    from carbonized bacon, spaghetti and eggs...   =
+=====================================================
 "
 echo
 echo
