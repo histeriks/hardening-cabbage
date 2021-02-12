@@ -10,12 +10,15 @@ Also, it's done in 5 mins, same as mentioned "specialty"...
 To use, log in into your VPS as root, and type:
 
 git clone https://github.com/histeriks/hardening.git
+
 ^^^ to clone the repo...
 
 cd hardening
+
 ^^^ to enter the directory...
 
 chmod +x carbonara-ubuntu-CIS.sh
+
 ^^^ to make the script executable...
 
 and
