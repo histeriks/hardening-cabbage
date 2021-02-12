@@ -1,5 +1,5 @@
 # CARBONARA                     
-# savagely butchered from jshielder by yours trully, torn to shreads and rebuilt to aid my lazy-ass root bretheren from all over!
+# savagely butchered from jshielder by yours trully! torn to shreads and rebuilt again, aiding my lazy-ass roots bretheren from all over!
 # script's purpose is hardening of Ubuntu 18.04, achieving CIS regulatory compliance without having to move a finger!
                                                
 Carbonara not because diamonds are the hardest, purest, densest form of carbon, the hardest crap in whole damn universe...
