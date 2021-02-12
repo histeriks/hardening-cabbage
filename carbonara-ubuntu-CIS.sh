@@ -300,6 +300,10 @@ chmod 600 /etc/gshadow-
 
 read ip < <(last -i | grep -o '[0-9]\+[.][0-9]\+[.][0-9]\+[.][0-9]\+') && echo ALL: $ip >> /etc/hosts.allow
 
+usermod -aG sudo $username
+
+echo $username "ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
 service sshd restart
 
 clear
