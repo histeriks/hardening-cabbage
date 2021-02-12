@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Carbonara, a CIS hardening script for Ubuntu 18.04
+# Carbonara, a CIS HARDening script for Ubuntu 18.04
 #
-# Carbonara not because diamonds are hardest thing known to man
-# Carbonara not because diamonds are the purest, densest carbon
+# Carbonara not because diamonds are harrrrrdest thing known to man...
+# Carbonara not because diamonds are the purest, densest carbon...
 #
-# Carbonara because this script resembles spaghetti carbonara, 
-# a junk food made from over-burned bacon and powdered eggs...
+# Carbonara because this script resembles spaghetti, spaghetti carbonara, junk food made from over-burned bacon and powdered eggs...
 #
-# basically a butchered JShielder (from Jason Soto) tweaked for my own needs...
+# basically it's a butchered JShielder (from Jason Soto) tweaked for my own needs...
 # 
 
 source helpers.sh
