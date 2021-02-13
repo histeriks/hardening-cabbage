@@ -13,7 +13,7 @@ LogLevel VERBOSE
 MaxAuthTries 2
 MaxSessions 2
 LoginGraceTime 30
-PermitRootLogin yes
+PermitRootLogin no
 StrictModes yes
 PubkeyAuthentication yes
 IgnoreRhosts yes
@@ -35,4 +35,4 @@ UsePAM yes
 UseDNS no
 MaxStartups 2
 Banner /etc/motd
-AllowUsers root USERNAME
+AllowUsers USERNAME
