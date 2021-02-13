@@ -1,7 +1,6 @@
 # CABBAGE                     
 # originally jshielder, butchered & reassembled by histerix!
-# promoting dark art of managing servers by doing nothing - CIS compliant Ubuntu hardening without moving a pinky!
-# working smart, not working hard!                                          
+# dark art of managing servers by doing nothing - CIS compliant Ubuntu hardening without moving a pinky! work smart, not hard!                                          
 
 To use Cabbage, log in into your VPS as root, and type:
 
