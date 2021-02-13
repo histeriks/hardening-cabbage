@@ -1,6 +1,7 @@
 # CABBAGE                     
-# hardening script for Ubuntu & Debian achieving CIS regulatory compliance without breaking a sweat...
-# savagely butchered jshielder hardening script which was too interactive for my taste...                                           
+# originally jshielder, butchered & reassembled by histerix!
+# promoting dark art of server management through doing nothing - CIS Ubuntu hardening without moving a pinky!
+# working smart, not working hard!                                          
 
 To use Cabbage, log in into your VPS as root, and type:
 
