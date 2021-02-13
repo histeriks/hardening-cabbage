@@ -1,6 +1,7 @@
 # CABBAGE                     
-# savagely butchered from jshielder by yours trully!
-# goal: hardening of Ubuntu 18.04 achieving CIS regulatory compliance without having to move a finger!
+# savagely butchered jshielder...
+# hardening script for Ubuntu & Debian...
+# CIS regulatory compliance without breaking a sweat...
                                                
 
 To use Cabbage, log in into your VPS as root, and type:
