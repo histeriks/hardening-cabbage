@@ -2,7 +2,7 @@
 
 source helpers.sh
 
-##############################################################################################################
+################################################################
 
 f_banner(){
 echo
@@ -299,11 +299,10 @@ iptables -A INPUT -j LOG
 iptables -A FORWARD -j LOG
 
 clear
-f_banner
 
-echo -n " Do you want to install PSAD (Recommended)? (y/n): " ; read psad_answer
+echo -n "Do you want to install PSAD (recommended)? (y/n):" ; read psad_answer
 if [ "$psad_answer" == "y" ]; then
-echo -n " Type an Email Address to Receive PSAD Alerts: " ; read inbox1
+echo -n "Email address for receiving PSAD Alerts:" ; read inbox1
 apt install psad -y
 sed -i s/INBOX/$inbox1/g templates/psad.conf
 sed -i s/CHANGEME/$host_name.$domain_name/g templates/psad.conf  
@@ -312,11 +311,13 @@ psad --sig-update
 service psad restart
 echo "Installation and Configuration Complete"
 echo "Run service psad status, for detected events"
-echo ""
+
 say_done
+clear
 else
 echo "OK"
 say_done
+clear
 fi
 
 chmod 000 /usr/bin/as >/dev/null 2>&1
@@ -330,7 +331,6 @@ chmod 000 /usr/bin/*c++ >/dev/null 2>&1
 chmod 000 /usr/bin/*g++ >/dev/null 2>&1
 
 clear
-f_banner
 
 echo -n "Enable Unattended Security Updates? (y/n): "; read unattended
 if [ "$unattended" == "y" ]; then
@@ -340,14 +340,12 @@ clear
 fi
   
 clear
-f_banner
 
 apt install acct -y
 touch /var/log/wtmp
 echo "OK"
   
 clear
-f_banner
 
 apt install sysstat -y
 sed -i 's/ENABLED="false"/ENABLED="true"/g' /etc/default/sysstat
@@ -356,7 +354,7 @@ echo "OK"
 say_done
   
 clear
-f_banner
+
 echo -n " Do you want to Install ArpWatch on this Server? (y/n): " ; read arp_answer
 if [ "$arp_answer" == "y" ]; then
 echo "Installing ArpWatch"
@@ -372,7 +370,6 @@ say_done
 fi
 
 clear
-f_banner
 
 echo -n " Do you want to set a GRUB bootloader password? (y/n): " ; read grub_answer
 if [ "$grub_answer" == "y" ]; then
@@ -382,6 +379,7 @@ echo " set superusers="root" " >> /etc/grub.d/40_custom
 echo " password_pbkdf2 root $grubpassword " >> /etc/grub.d/40_custom
 rm grubpassword.tmp
 update-grub
+clear
 echo "You'll have to authenticate on every boot with user root & password you just added"
 echo "OK"
 say_done
@@ -397,7 +395,7 @@ sleep 2
 chown root:root /boot/grub/grub.cfg
 chmod og-rwx /boot/grub/grub.cfg
 say_done
-  
+clear  
   
 cat templates/texts/bye-CIS
 say_continue
