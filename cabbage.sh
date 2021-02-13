@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Carbonara v1.0
-# CIS Hardening script for Ubuntu 18.04
-# Feel free to thank Jason who made the original. I was just too lazy to use it interractively,
-# so i created my version which ain't such a terrible pain in the arse...i think.
-
 source helpers.sh
 
 ##############################################################################################################
@@ -315,8 +310,8 @@ echo -e "\e[34m-----------------------------------------------------------------
 echo -e "\e[93m[+]\e[00m Installing Fail2Ban"
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo ""
-apt install sendmail
-apt install fail2ban
+apt install sendmail -y
+apt install fail2ban -y
 say_done
 
 clear
@@ -417,7 +412,7 @@ echo -e "\e[34m-----------------------------------------------------------------
 echo -e "\e[93m[+]\e[00m Installing PortSentry"
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo ""
-apt install portsentry
+apt install portsentry -y
 mv /etc/portsentry/portsentry.conf /etc/portsentry/portsentry.conf-original
 cp templates/portsentry /etc/portsentry/portsentry.conf
 sed s/tcp/atcp/g /etc/default/portsentry > salida.tmp
@@ -528,7 +523,7 @@ echo ""
 echo -n " Do you want to install PSAD (Recommended)? (y/n): " ; read psad_answer
 if [ "$psad_answer" == "y" ]; then
 echo -n " Type an Email Address to Receive PSAD Alerts: " ; read inbox1
-apt install psad
+apt install psad -y
 sed -i s/INBOX/$inbox1/g templates/psad.conf
 sed -i s/CHANGEME/$host_name.$domain_name/g templates/psad.conf  
 cp templates/psad.conf /etc/psad/psad.conf
@@ -585,7 +580,7 @@ echo -e "\e[34m-----------------------------------------------------------------
 echo -e "\e[93m[+]\e[00m Enable Process Accounting"
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo ""
-apt install acct
+apt install acct -y
 touch /var/log/wtmp
 echo "OK"
   
@@ -595,7 +590,7 @@ echo -e "\e[34m-----------------------------------------------------------------
 echo -e "\e[93m[+]\e[00m Installing and enabling sysstat"
 echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
 echo ""
-apt install sysstat
+apt install sysstat -y
 sed -i 's/ENABLED="false"/ENABLED="true"/g' /etc/default/sysstat
 service sysstat start
 echo "OK"
