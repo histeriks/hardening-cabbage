@@ -221,9 +221,8 @@ usermod -aG sudo $username
 echo $username "ALL=(ALL:ALL) ALL" >> /etc/sudoers
 service sshd restart
 clear
-echo -n "Do you have a separate /tmp partition? (y/n): "; read tmp_answer
-if [ "$tmp_answer" == "n" ]; then
-echo "We will create a FileSystem for the /tmp Directory and set Proper Permissions "
+
+echo "Creating fileSystem for the /tmp directory & setting safe permissions"
 spinner
 dd if=/dev/zero of=/usr/tmpDISK bs=1024 count=2048000
 mkdir /tmpbackup
@@ -235,9 +234,6 @@ rm -rf /tmpbackup
 echo "/usr/tmpDISK  /tmp    tmpfs   loop,nosuid,nodev,noexec,rw  0 0" >> /etc/fstab
 sudo mount -o remount /tmp
 
-else
-
-fi
 
 apt install sendmail -y
 apt install fail2ban -y
