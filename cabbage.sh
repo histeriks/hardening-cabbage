@@ -383,14 +383,15 @@ clear
 echo "You'll have to authenticate on every boot with user root & password you just added"
 echo "OK"
 say_done
+clear
 else
 echo "OK"
 say_done
 fi
 
-echo -e ""
+clear  
 echo -e "Securing Boot Settings"
-spinner
+
 sleep 2
 chown root:root /boot/grub/grub.cfg
 chmod og-rwx /boot/grub/grub.cfg
