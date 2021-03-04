@@ -4,15 +4,15 @@
 
 To use Cabbage, log into your VPS as root, and type:
 
-git clone https://github.com/histeriks/hardening.git # <<< to clone the repo...
+git clone https://github.com/histeriks/hardening.git  <--- to clone the repo...
 
-cd hardening # <<< to enter the directory...
+cd hardening  <--- to enter the directory...
 
-chmod +x cabbage.sh # <<< to make the script executable...
+chmod +x cabbage.sh  <--- to make the script executable...
 
-and 
+&
 
-./cabbage.sh # <<< to finally run the script!
+./cabbage.sh <--- to finally run the script!
 
 After that, just follow the instructions (you might have to press enter a few times, still working on making it fully autonomous).
 
