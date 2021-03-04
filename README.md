@@ -1,6 +1,6 @@
 # CABBAGE                     
 # ex jshielder, butchered & reassembled for lazy brethern!
-# dark art of achieving plenty while doing nothing - CIS compliant Ubuntu without moving a pinky!                                         
+# dark art of achieving plenty while doing nothing - CIS compliant Ubuntu without moving a pinky! Work smart, not hard.
 
 To use Cabbage, log in into your VPS as root, and type:
 
