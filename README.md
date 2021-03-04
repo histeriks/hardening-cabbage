@@ -2,25 +2,17 @@
 # ex jshielder, butchered into a salad for my lazy brethern!
 # dark art of achieving plenty while doing nothing - CIS compliant Ubuntu without moving a pinky! There's an old saying among my tribesmen, roughly translated something in lines of: work has created a man & leisure has created a gentleman. Work smart, not hard.
 
-To use Cabbage, log in into your VPS as root, and type:
+To use Cabbage, log into your VPS as root, and type:
 
-git clone https://github.com/histeriks/hardening.git
+git clone https://github.com/histeriks/hardening.git # <<< to clone the repo...
 
-^^^ to clone the repo...
+cd hardening # <<< to enter the directory...
 
-cd hardening
+chmod +x cabbage.sh # <<< to make the script executable...
 
-^^^ to enter the directory...
+and 
 
-chmod +x cabbage.sh
-
-^^^ to make the script executable...
-
-and
-
-./cabbage.sh
-
-^^^ to finally run the script!
+./cabbage.sh # <<< to finally run the script!
 
 After that, just follow the instructions (you might have to press enter a few times, still working on making it fully autonomous).
 
