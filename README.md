@@ -1,6 +1,6 @@
 # CABBAGE                     
 # ex jshielder, butchered into a salad for lazy brethern...
-# dark art of achieving plenty while doing nothing - CIS compliant Ubuntu without moving a pinky! There's an old saying among my tribesmen, roughly translated something in lines of: work has created a man & leisure has created a gentleman. Work smart, not hard.
+# dark art of achieving plenty while doing nothing - CIS compliant Ubuntu without moving a pinky! As old saying goes: work created a man but leisure created a gentleman. Work smart, not hard.
 
 To use Cabbage, log into your VPS as root, and type:
 
