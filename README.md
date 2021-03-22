@@ -1,5 +1,5 @@
 # CABBAGE                     
-# "jshielder" which got butchered into a salad for lazy brethern...
+# was "jshielder" until it got butchered into this salad for lazy brethern who value their time...
 # dark art of achieving plenty while doing nothing - CIS compliant Ubuntu without moving a pinky! As old saying goes: work created a man but leisure created a gentleman. Work smart, not hard.
 
 To use Cabbage, log into your VPS as root, and type:
