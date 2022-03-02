@@ -4,10 +4,7 @@
 
 To use Cabbage, log into your VPS as root, and type:
 
-git clone https://github.com/histeriks/hardening.git 
-cd hardening
-chmod +x cabbage.sh
-./cabbage.sh
+git clone https://github.com/histeriks/hardening.git && cd hardening && chmod +x cabbage.sh && bash cabbage.sh
 
 Script extracts your workstation's current public IP address and adds it to the /etc/hosts.allow file. If you use more than one public IP address, add them as well, or finally start using a VPN. User you create during hardening process is automatically added to Sudo group. After hardening, you won't be able to log in directly as root anymore, but you can always use "sudo passwd" to reset your root pass and log in as root with "su" if needed for whatever reason...
 
